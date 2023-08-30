@@ -1,6 +1,16 @@
+#A monoalphabetic cipher is a type of substitution cipher where each
+# letter in the plaintext is replaced by a fixed letter
+# in the ciphertext. In other words, it's a one-to-one mapping of
+# letters from the plaintext to the ciphertext. Unlike the Caesar
+# cipher, where each letter is shifted by a constant amount,
+# monoalphabetic ciphers can use any mapping of letters.
+#Example:
+# Plaintext: HELLO
+#Ciphertext: SVOOL
+#Here key is the alphabet in reverse order(D2 did it this way)
 alphabet=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 key=alphabet.copy()
-key.reverse()#this is the method D2 used
+key.reverse()
 
 def enryption():
     plainText=input("Enter the plain text: ").lower()
